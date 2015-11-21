@@ -1,0 +1,16 @@
+<%= @firstname + " " + @lastname + " Says Hello!" %>
+<p>
+	It is now <%= @time %>
+	Time in one hour will be:  <%= 1.hour.from_now.localtime%>
+	<br/>
+	<%= link_to "Goodbye",say_goodbye_path %> !
+	<br/>
+	Here is a list of files:
+
+	<% for file in @files %>
+		<% @counter = @counter + 1 %>
+		<ol><%= @counter %> : <%= file %></ol>
+
+	<%end %>
+
+</p>
