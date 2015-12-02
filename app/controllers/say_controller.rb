@@ -11,4 +11,10 @@ class SayController < ApplicationController
 
   def goodbye
   end
+  def say_goodnight(name)
+  	
+  	result =  'Good Night ' + name
+  	return result
+  	
+  end
 end
